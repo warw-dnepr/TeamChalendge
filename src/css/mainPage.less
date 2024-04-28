@@ -1,0 +1,175 @@
+@import url(./variables.less);
+
+.main-page{
+      margin: auto;
+      // max-width: @width;
+      .main-page-baner{
+            height: 100px;
+            background-color: @bgElemColor;
+      }
+      header{
+            .head-main{
+                  margin: auto;
+                  .head-up{
+                        max-width: @width1270;
+                        margin:auto;
+                        height:70px;
+                        display:flex;
+                        align-items: center;    
+                        .head-logo{
+                              cursor: pointer;
+                              width:200px;
+                              font-size: 40px;
+                              font-weight: 500;
+                              text-align:center
+                        }
+                        .head-li{
+                              display:flex;
+
+                              ul{
+                                display:flex;
+                                    li{
+                                    .header-li();
+                                    font-weight: 500;
+                                    }
+                              }
+                        }
+                        .head-btn{
+                              padding:10px 33px;
+                              margin-left: auto;
+                              font-size: 16px;
+                              .button-bg()
+                        }
+                  }
+                  .head-down-wrap{
+                        max-width:@width;
+                        border-top:solid @borderSolid 1px;
+                        border-bottom:solid @borderSolid 1px;
+                        margin:auto;
+                        .head-down{
+                              display: flex;
+                              align-items:center;
+                              max-width: @width1270;
+                              margin:auto;
+                              height: 70px;
+                              .head-catalog-click{
+                                    width: 200px;
+                                    font-size: 16px;
+                                    font-weight: 500;
+                                    color: #696F74;
+                                    cursor: pointer;
+                                    span{
+                                          margin-left: 10px;
+                                    }
+                              }
+                              .head-input{
+                                    position: relative;
+                                    input{
+                                          width: 547px;
+                                          height: 52px;
+                                          padding: 11px;
+                                          border-radius: 8px;
+                                          border:solid @borderSolid 1px;
+                                          background-color:@bgElemColor;
+                                    }
+                                    svg{
+                                          position: absolute;
+                                          right: 13px;
+                                          top: 17px;
+                                    }
+                              }
+                              .head-icons{
+                                    display:flex;
+                                    justify-content:space-between;
+                                    margin-left:auto;
+                                    width: 140px;
+                                    div{
+                                          border-radius:50px;
+                                          border:solid 1px @borderSolid;
+                                          padding:9px;
+                                          display:flex;
+                                          cursor:pointer;
+                                    }
+                                    .head-icon-cart{
+                                          position:relative;
+                                          .cart-qty{
+                                                position: absolute;
+                                                border-radius: 50px;
+                                                color: #fff;
+                                                background-color: #696973;
+                                                border: solid 2px #fff;
+                                                left: 19px;
+                                                top: 18px;
+                                                font-size: 11px;
+                                                width: 17px;
+                                                text-align: center;
+                                                font-weight: 600;                                                
+                                          }
+                                    }
+                              }
+                        }
+                  }
+
+            }
+      }
+      
+      .review-card{
+            margin:20px;
+            width: 317px;
+            height: 548px;
+            border-radius: 12px;
+            border:solid @bgElemColor 2px;
+            .review-head{
+                  display: flex;
+                  padding: 10px 5px 12px 5px;
+                  border-bottom: solid @bgElemColor 2px;
+                  .review-img{
+                        img{
+                              width: 118px;
+                              height: 118px;
+                              border-radius: 8px;
+                        }
+                  }
+                  .review-head-info{
+                        margin-left: 12px;
+                        h3{
+                              font-size: 16px;
+                              font-weight: 600;
+                              line-height: 19.36px;
+                              color: #121415;
+                        }
+                        .review-head-description{
+                              font-size: 14px;
+                              font-weight: 500;
+                              line-height: 16.94px;
+                              color:#121415;
+                              margin: 12px 0 9px 0;
+                        }
+                        .old-price{
+                              color: #888F97;
+                              font-size: 14px;
+                              font-weight: 500;
+                              line-height: 16.94px;
+                        }
+                        .old-price::first-letter{
+                              margin-right:4px;
+                        }
+                        .discont{
+                              background-color: #696973;
+                              font-size: 12px;
+                              line-height: 14.52px;
+                              margin-left:5px;
+                              border-radius: 8px;
+                              color: #fff;
+                              padding: 2px;
+
+                        }
+                        .review-head-info-price{
+                              font-size: 18px;
+                              font-weight: 600;
+                              line-height: 21.78px;
+                        }
+                  }
+            }
+      }
+}
